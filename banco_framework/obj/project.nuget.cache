@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "nVUgAPTgH965O579+2IzpVpIVOA6aM7ygxxkhhysHZk5lzdXsdSib+bRxounxFE64im7f0p7IwCfVfVA8J8eKw==",
+  "dgSpecHash": "IRg47MtL8JnO1BP6otpiBdcccJf3i+4CrWNuj/WjllAOFYPEnMgd+gYRlUIaAZ0jnyhAi+YhE1iGIYFnkIISkg==",
   "success": true,
   "projectFilePath": "/home/xxawl1n/Desktop/bancoframework-console/banco_framework/bancoFramework.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "/home/xxawl1n/.nuget/packages/cpf.cnpj/1.0.2/cpf.cnpj.1.0.2.nupkg.sha512"
+  ],
   "logs": []
 }
