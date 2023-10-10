@@ -63,8 +63,10 @@ internal class Program
     {
         var cliente = new Cliente();
 
-        List<string> erros = new List<string>();
-        erros.Add("");
+        List<string> erros = new List<string>
+        {
+            ""
+        };
 
         while (erros.Count() != 0)
         {
@@ -115,6 +117,7 @@ internal class Program
                     Console.WriteLine(mensagem);
                 }
                 Console.ReadLine();
+                Console.Clear();
             }
         }
 

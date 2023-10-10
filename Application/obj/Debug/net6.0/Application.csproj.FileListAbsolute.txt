@@ -1,0 +1,11 @@
+/home/xxawl1n/Desktop/bancoframework-console/Application/bin/Debug/net6.0/Application.deps.json
+/home/xxawl1n/Desktop/bancoframework-console/Application/bin/Debug/net6.0/Application.dll
+/home/xxawl1n/Desktop/bancoframework-console/Application/bin/Debug/net6.0/Application.pdb
+/home/xxawl1n/Desktop/bancoframework-console/Application/obj/Debug/net6.0/Application.GeneratedMSBuildEditorConfig.editorconfig
+/home/xxawl1n/Desktop/bancoframework-console/Application/obj/Debug/net6.0/Application.AssemblyInfoInputs.cache
+/home/xxawl1n/Desktop/bancoframework-console/Application/obj/Debug/net6.0/Application.AssemblyInfo.cs
+/home/xxawl1n/Desktop/bancoframework-console/Application/obj/Debug/net6.0/Application.csproj.CoreCompileInputs.cache
+/home/xxawl1n/Desktop/bancoframework-console/Application/obj/Debug/net6.0/Application.dll
+/home/xxawl1n/Desktop/bancoframework-console/Application/obj/Debug/net6.0/refint/Application.dll
+/home/xxawl1n/Desktop/bancoframework-console/Application/obj/Debug/net6.0/Application.pdb
+/home/xxawl1n/Desktop/bancoframework-console/Application/obj/Debug/net6.0/ref/Application.dll
