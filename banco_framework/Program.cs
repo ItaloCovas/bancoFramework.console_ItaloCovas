@@ -1,21 +1,38 @@
 ﻿using Domain.Model;
 using Application;
 using CpfCnpjLibrary;
+using Microsoft.Extensions.DependencyInjection;
+using Repository;
 
 internal class Program
 {
     private static void Main(string[] args)
     {
+        var serviceCollection = new ServiceCollection();
+        ConfigureServices(serviceCollection);
+        var serviceProvider = serviceCollection.BuildServiceProvider();
+        var clienteService = serviceProvider.GetService<IClienteRepository>();
+
+
         Console.Clear();
         Console.WriteLine("Seja bem vindo ao banco Framework");
         Console.WriteLine("Por favor, identifique-se");
         Console.WriteLine("");
-        var cliente = Identificacao();
+        var cliente = Identificacao(clienteService);
+        Menu(cliente, clienteService);
+         
     }
 
-    static void Menu(Cliente cliente)
+    public static void ConfigureServices(IServiceCollection services)
+    {
+        services.AddScoped<IClienteRepository, ClienteRepository>();
+    }
+
+    static void Menu(Cliente cliente, IClienteRepository clienteService)
     {
         Console.Clear();
+        Console.WriteLine($"O que deseja fazer, {cliente.Nome}?");
+        Console.WriteLine($"SALDO ATUAL => R${cliente.Saldo}");
         Console.WriteLine("");
         Console.WriteLine("--------------");
         Console.WriteLine("Menu");
@@ -36,9 +53,9 @@ internal class Program
                 Console.WriteLine("Digite o valor:");
                 valor = float.Parse(Console.ReadLine());
                 cliente.Saldo = calculo.Soma(cliente.Saldo, valor);
-                Console.WriteLine("");
-                Console.WriteLine($"==> Saldo atual é R${cliente.Saldo}");
-                Menu(cliente);
+                clienteService.Update(cliente);
+                Console.Clear();
+                Menu(cliente, clienteService);
                 break;
 
             case 2:
@@ -46,9 +63,9 @@ internal class Program
                 Console.WriteLine("Digite o valor:");
                 valor = float.Parse(Console.ReadLine());
                 cliente.Saldo = calculo.Subtracao(cliente.Saldo, valor);
-                Console.WriteLine("");
-                Console.WriteLine($"==> Saldo atual é R${cliente.Saldo}");
-                Menu(cliente);
+                clienteService.Update(cliente);
+                Console.Clear();
+                Menu(cliente, clienteService);
                 break;
 
             default:
@@ -59,7 +76,7 @@ internal class Program
 
     }
 
-    static Cliente Identificacao()
+    static Cliente Identificacao(IClienteRepository clienteService)
     {
         var cliente = new Cliente();
 
@@ -84,6 +101,13 @@ internal class Program
             {
 
                 cliente.Id = int.Parse(id);
+
+                var clienteExistente = clienteService.Get(cliente.Id);
+
+                if(clienteExistente != null)
+                {
+                    return clienteExistente;
+                }
             }
             Console.WriteLine("");
 
@@ -121,7 +145,7 @@ internal class Program
             }
         }
 
-        Menu(cliente);
+        clienteService.Insert(cliente);
 
         return cliente;
     }

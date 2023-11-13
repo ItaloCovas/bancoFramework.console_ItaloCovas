@@ -4,12 +4,9 @@ namespace Repository
 {
     public interface IClienteRepository
     {
-
-        Cliente GetById(int id);
-
-        Cliente Create(Cliente cliente);
-
-        void Update(Cliente cliente);
+        public Cliente Get(int id);
+        public void Insert(Cliente cliente);
+        public void Update(Cliente cliente);
 
     }
 }

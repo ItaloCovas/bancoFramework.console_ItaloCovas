@@ -1,8 +1,20 @@
 {
   "version": 2,
-  "dgSpecHash": "AdbsOTOaEONjMDciAyRrSBToOB7SHD45N9iSqcRajdrS1K9NGLlDZKakF6RnJLWTQgmH2j0CElPqpD2aQCJJHA==",
+  "dgSpecHash": "X3w+/bf6o5kWl92ZFCHzmwiasQO6d7QpWur5JpSMGNvvVVl5hTMtzu8xFhWOxdzJtIrpvXD0Z9aWeqVMKhC7vg==",
   "success": true,
-  "projectFilePath": "/home/xxawl1n/Desktop/bancoframework-console/Application/Application.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "C:\\Users\\italo\\OneDrive\\Área de Trabalho\\bancoFramework.console_ItaloCovas\\Application\\Application.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\italo\\.nuget\\packages\\cpf.cnpj\\1.0.2\\cpf.cnpj.1.0.2.nupkg.sha512",
+    "C:\\Users\\italo\\.nuget\\packages\\dapper\\2.1.15\\dapper.2.1.15.nupkg.sha512",
+    "C:\\Users\\italo\\.nuget\\packages\\microsoft.netcore.platforms\\3.1.0\\microsoft.netcore.platforms.3.1.0.nupkg.sha512",
+    "C:\\Users\\italo\\.nuget\\packages\\microsoft.win32.registry\\4.7.0\\microsoft.win32.registry.4.7.0.nupkg.sha512",
+    "C:\\Users\\italo\\.nuget\\packages\\runtime.native.system.data.sqlclient.sni\\4.7.0\\runtime.native.system.data.sqlclient.sni.4.7.0.nupkg.sha512",
+    "C:\\Users\\italo\\.nuget\\packages\\runtime.win-arm64.runtime.native.system.data.sqlclient.sni\\4.4.0\\runtime.win-arm64.runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512",
+    "C:\\Users\\italo\\.nuget\\packages\\runtime.win-x64.runtime.native.system.data.sqlclient.sni\\4.4.0\\runtime.win-x64.runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512",
+    "C:\\Users\\italo\\.nuget\\packages\\runtime.win-x86.runtime.native.system.data.sqlclient.sni\\4.4.0\\runtime.win-x86.runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512",
+    "C:\\Users\\italo\\.nuget\\packages\\system.data.sqlclient\\4.8.5\\system.data.sqlclient.4.8.5.nupkg.sha512",
+    "C:\\Users\\italo\\.nuget\\packages\\system.security.accesscontrol\\4.7.0\\system.security.accesscontrol.4.7.0.nupkg.sha512",
+    "C:\\Users\\italo\\.nuget\\packages\\system.security.principal.windows\\4.7.0\\system.security.principal.windows.4.7.0.nupkg.sha512"
+  ],
   "logs": []
 }
